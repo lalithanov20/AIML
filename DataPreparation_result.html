@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+  </head>
+  <body>
+    <h1>Industry Accident Data Prediction</h1>
+ 
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" id="myFile" name="uploaded-file" accept=".csv">
+        <input type="submit" value="Upload file">
+    </form>
+  <br>
+  <p style="color:green;">file uploaded successfully</p>
+  <form action="/DataCleaning" target="_blank">
+        <input type="submit" value="DataCleaning" />
+   <p>Data Cleansed Sucessfully</p>
+    </form>
+  <form action="/DataPreparation" target="_blank">
+    <input type="submit" value="DataPreparation" />
+ <p>Data Prepared Sucessfully</p>
+</form>
+</form>
+<form action="/ModelTraining" target="_blank">
+  <input type="submit" value="ModelTraining" />
+</form>
+  </body>
+</html>
